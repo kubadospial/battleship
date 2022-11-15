@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battleship</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .app {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="app">
+      <section>
+        <select name="column" id="column-select">
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="E">E</option>
+          <option value="F">F</option>
+          <option value="G">G</option>
+          <option value="H">H</option>
+          <option value="I">I</option>
+          <option value="J">j</option>
+        </select>
+        <select name="row" id="row-select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <select name="row" id="shiptype-select">
+          <option value="destroyer">destroyer</option>
+          <option value="battleship">battleship</option>
+        </select>
+        <select name="row" id="orientation-select">
+          <option value="vertical">vertical</option>
+          <option value="horizontal">horizontal</option>
+        </select>
+        <button id="submit">select</button>
+      </section>
+    </main>
+    <script type="module" src="/src/game.ts"></script>
+  </body>
+</html>
